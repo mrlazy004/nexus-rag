@@ -1,25 +1,16 @@
+packaging
+groq
+sentence-transformers
+faiss-cpu==1.8.0
 fastapi==0.111.0
 uvicorn[standard]==0.29.0
 python-multipart==0.0.9
 pydantic==2.7.1
-
-# LLM
-openai==1.30.1
-tiktoken==0.7.0
-
-# Vector search
-faiss-cpu==1.8.0
 numpy==1.26.4
-
-# Document processing
 pdfplumber==0.11.0
 pandas==2.2.2
 openpyxl==3.1.2
 python-docx==1.1.2
-
-# Utilities
 python-dotenv==1.0.1
-
-packaging
-groq
-sentence-transformers
+tiktoken==0.7.0
+openai==1.30.1
