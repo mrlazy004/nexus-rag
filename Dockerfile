@@ -1,13 +1,11 @@
-# ════════════════════════════════════════════════════════════════
-# Dockerfile — Backend
-# ════════════════════════════════════════════════════════════════
 FROM python:3.11-slim
 
 WORKDIR /app
 
-# System deps for pdfplumber / faiss
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libgomp1 gcc g++ && rm -rf /var/lib/apt/lists/*
+
+RUN pip install packaging
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
